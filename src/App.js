@@ -1,15 +1,18 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function App() {
-  //   const window = document.documentElement;
-  //   console.log(window);
-
-  useLayoutEffect(() => {
+  const [width, setWidth] = useState(0);
+  //   let wii;
+  useEffect(() => {
+    ///
     window.addEventListener("resize", (e) => {
       const { width } = e.target.screen;
-      console.log(width);
+      setWidth(width);
     });
-  });
+    ///
+    console.log("Width Changed");
+  }, [width]);
+
   //   console.log(window.getBoundingClientRect());
   return (
     <main className="container">
