@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
+
+// Asset Imports
+import avatar from "./assets/images/avatar.jpg";
 
 export default function App() {
   const [width, setWidth] = useState(0);
-  //   let wii;
   useEffect(() => {
     ///
     window.addEventListener("resize", (e) => {
@@ -16,12 +22,10 @@ export default function App() {
   //   console.log(window.getBoundingClientRect());
   return (
     <main className="container">
-      <header>
-        <nav>
-          <h2>Rockstar Dev!!</h2>
-          <div className="ham-icon"></div>
-        </nav>
-      </header>
+      <Header />
+      <About />
+      <Portfolio />
+      <Footer />
     </main>
   );
 }
