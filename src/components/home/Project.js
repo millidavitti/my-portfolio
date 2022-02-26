@@ -1,6 +1,6 @@
 import React from "react";
 // Assets
-import imgg from "../assets/images/avatar.jpg";
+import imgg from "../../assets/images/avatar.jpg";
 
 export default function Project() {
   return (

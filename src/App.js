@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import { Routes, Route, Link } from "react-router-dom";
 
-// Asset Imports
-import avatar from "./assets/images/avatar.jpg";
+// Components
+import NavBar from "./components/NavBar";
+import Home from "./routes/Home";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [width, setWidth] = useState(0);
@@ -22,9 +21,10 @@ export default function App() {
   //   console.log(window.getBoundingClientRect());
   return (
     <main className="container">
-      <Header />
-      <About />
-      <Portfolio />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={Home} />
+      </Routes>
       <Footer />
     </main>
   );

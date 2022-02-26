@@ -1,23 +1,19 @@
 import React from "react";
-
-// Asset Imports
-import menu from "../assets/icons/ham-icon.png";
-import download from "../assets/icons/download.png";
+import NavBar from "../NavBar";
+// Assets
+import download from "../../assets/icons/download.png";
 
 export default function Header() {
   return (
     <header>
-      <nav>
-        <h2>Rockstar Dev</h2>
-        <img src={menu} alt="ham-menu" className="ham-menu" />
-      </nav>
+      <NavBar />
       <div className="hero-content">
         <div>
           <h2>
             I'm <span>Donald Abua.</span>
           </h2>
           <h3>FrontEnd Developer!</h3>
-          <p>This is my portfolio website</p>
+          <p>Welcome, a bit of tea and byte of bread?</p>
           <div className="buttons">
             <button>View Portfolio</button>
             <button>

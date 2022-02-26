@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap");
+
+/* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by IconsBox - Flaticon</a>
+#A62626
+
+<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
   font-family: "Barlow", sans-serif;
 }
 
@@ -38,19 +46,20 @@ nav {
 .hero-content {
   display: flex;
   height: 100vh;
+  max-height: 800px;
   padding: 10px 3%;
   text-align: center;
   color: var(--text-color);
 }
 
 .hero-content > div {
-  /* outline: auto; */
   margin: auto;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   width: 80%;
   height: 60vh;
+  max-height: 500px;
 }
 
 .hero-content span {
@@ -67,7 +76,6 @@ nav {
 }
 .hero-content h3 {
   font-size: 1.8rem;
-  /* outline: auto; */
 }
 
 .hero-content p {
@@ -78,20 +86,18 @@ nav {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  /* outline: auto; */
   width: 200px;
-  height: 120px;
+  height: 150px;
   margin: 20px auto;
 }
 
-.hero-content button,
 button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   border: none;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 10px;
   width: 100%;
   height: 50px;
@@ -100,13 +106,16 @@ button {
   cursor: pointer;
 }
 
+.hero-content button {
+  height: 60px;
+}
+
 .hero-content button:nth-of-type(1) {
   background-color: var(--btn-bg);
 }
 .hero-content button:nth-of-type(2) {
   border: 2px solid var(--outline);
   background: none;
-  /* outline: auto; */
 }
 
 /* About me */
@@ -133,7 +142,6 @@ button {
 .about-me article {
   padding: 20px 0;
   margin: 20px 0;
-  /* outline: auto; */
   color: var(--text-color);
 }
 
@@ -159,7 +167,7 @@ button {
 /* Porfolio */
 .portfolio {
   padding: 10px 3%;
-  outline: auto;
+  margin-top: 100px;
 }
 
 .portfolio h2 {
@@ -168,22 +176,18 @@ button {
 }
 
 .project {
-  width: 100%;
-  height: 150px;
-  outline: auto;
   margin: 20px 0;
   color: white;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .project > img {
   width: 100%;
-  height: 100%;
+  height: 170px;
   object-fit: cover;
-
   transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -205,7 +209,6 @@ button {
   height: 1px;
   margin: auto;
   z-index: -1;
-  background-color: #1717189d;
 
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -214,6 +217,8 @@ button {
   width: 100%;
   height: 100%;
   z-index: 1;
+  filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.488);
 }
 
 .project a {
@@ -222,11 +227,123 @@ button {
   z-index: 3;
 }
 
-.portfolio button {
+.repo-btn {
+  position: relative;
   border: none;
   gap: 10px;
   border-radius: 10px;
   background: var(--btn-bg);
   font-size: 1.2rem;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+.repo-btn a {
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio > div {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--outline);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  /* border: 2px solid yellow; */
+  text-align: center;
+  color: var(--text-color);
+  width: 100%;
+  height: 100vh;
+  max-height: 800px;
+  padding: 20px 3%;
+}
+
+footer h2 {
+  font-weight: 500;
+}
+
+.quick-link h3 {
+  font-size: 1.2rem;
+  color: var(--footer-head);
+  font-weight: 500;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  width: 100%;
+  height: 90%;
+  max-height: 700px;
+  margin: auto 0;
+  border-bottom: 2px solid var(--outline);
+}
+
+.quick-links {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+}
+
+.quick-link {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.quick-link:last-child > div,
+ul:not(.socials-wrap) {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 60%;
+}
+
+.socials-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.socials-wrap li:first-child {
+  margin-left: auto;
+}
+.socials-wrap li:last-child {
+  margin-right: auto;
+}
+
+.quick-link a {
+  color: var(--text-color);
+}
+
+.twitter-wrap,
+.github-wrap,
+.linkedin-wrap {
+  position: relative;
+}
+
+.twitter,
+.linkedin,
+.github {
+  width: 30px;
+}
+
+.link a {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+}
+
+/* Desktop */
+@media screen and (min-width: 796px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
 }

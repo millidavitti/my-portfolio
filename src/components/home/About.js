@@ -1,8 +1,8 @@
 import React from "react";
 
 // Asset Imports
-import avatar from "../assets/images/avatar.jpg";
-import arrowRight from "../assets/icons/arrow-right.png";
+import avatar from "../../assets/images/avatar.jpg";
+import arrowRight from "../../assets/icons/arrow-right.png";
 
 export default function About() {
   return (
