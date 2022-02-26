@@ -1,5 +1,7 @@
 import React from "react";
 import Project from "./Project";
+
+// Assets
 import arrowRight from "../../assets/icons/arrow-right.png";
 
 export default function Portfolio() {

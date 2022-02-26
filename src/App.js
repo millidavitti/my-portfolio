@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 // Components
 import NavBar from "./components/NavBar";
 import Home from "./routes/Home";
+import Error from "./routes/Error";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -20,10 +21,11 @@ export default function App() {
 
   //   console.log(window.getBoundingClientRect());
   return (
-    <main className="container">
+    <main className='container'>
       <NavBar />
       <Routes>
-        <Route path="/" element={Home} />
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </main>
