@@ -29,6 +29,13 @@
   min-height: 100vh;
 }
 
+.app-wrap {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* outline: auto; */
+}
+
 nav {
   display: flex;
   position: absolute;
@@ -37,6 +44,9 @@ nav {
   padding: 10px 3%;
   border-bottom: 1px solid var(--outline);
   color: var(--text-color);
+}
+nav h2 {
+  font-weight: 500;
 }
 
 .ham-menu {
@@ -52,7 +62,7 @@ nav {
   color: var(--text-color);
 }
 
-.hero-content > div {
+.hero-wrap {
   margin: auto;
   display: flex;
   flex-flow: column;
@@ -60,6 +70,14 @@ nav {
   width: 80%;
   height: 60vh;
   max-height: 500px;
+}
+
+.hero-wrap > div:first-child {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 200px;
+  /* outline: auto; */
 }
 
 .hero-content span {
@@ -186,7 +204,7 @@ button {
 
 .project > img {
   width: 100%;
-  height: 170px;
+  height: 100%;
   object-fit: cover;
   transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -196,8 +214,8 @@ button {
 }
 
 .project h3 {
-  font-weight: normal;
-  padding: 3px;
+  font-weight: 500;
+  padding: 3%;
   position: absolute;
   z-index: 2;
 }
@@ -339,11 +357,61 @@ ul:not(.socials-wrap) {
   z-index: 100;
 }
 
-/* Desktop */
+/* Tablet */
 @media screen and (min-width: 796px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
+  }
+
+  /* Footer */
+  .repo-btn {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .buttons {
+    flex-flow: row;
+    width: 400px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .hero-content {
+    height: 60vh;
+    min-height: 450px;
+  }
+
+  .hero-wrap {
+    height: 300px;
+    margin-top: 100px;
+  }
+
+  /* About me */
+
+  .about-me > div {
+    display: flex;
+    gap: 20px;
+    outline: auto;
+    height: ;
+  }
+
+  .avatar {
+    width: 500px;
+    margin: auto 0;
+  }
+
+  /* Portfolio */
+  .projects {
+    display: block;
+  }
+
+  .project {
+    height: 400px;
+    /* outline: auto; */
   }
 }

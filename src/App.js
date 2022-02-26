@@ -22,12 +22,14 @@ export default function App() {
   //   console.log(window.getBoundingClientRect());
   return (
     <main className='container'>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
-      <Footer />
+      <div className='app-wrap'>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
+        <Footer />
+      </div>
     </main>
   );
 }

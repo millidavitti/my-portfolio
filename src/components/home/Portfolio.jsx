@@ -6,22 +6,22 @@ import arrowRight from "../../assets/icons/arrow-right.png";
 
 export default function Portfolio() {
   return (
-    <section className="portfolio ">
+    <section className='portfolio '>
       <h2>Portfolio</h2>
       <div>
-        <div className=" grid">
+        <div className='projects grid'>
           <Project />
           <Project />
           <Project />
           <Project />
         </div>
-        <button className="repo-btn">
-          <a href="https://github.com/millidavitti" target="blank">
+        <button className='repo-btn'>
+          <a href='https://github.com/millidavitti' target='blank'>
             {" "}
           </a>
           Visit my repository
           <span>
-            <img src={arrowRight} alt=""></img>
+            <img src={arrowRight} alt=''></img>
           </span>
         </button>
       </div>
