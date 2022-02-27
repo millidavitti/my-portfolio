@@ -22,8 +22,8 @@ export default function App() {
   //   console.log(window.getBoundingClientRect());
   return (
     <main className='container'>
+      <NavBar />
       <div className='app-wrap'>
-        <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='*' element={<Error />} />

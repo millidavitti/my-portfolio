@@ -6,7 +6,6 @@ import download from "../../assets/icons/download.png";
 export default function Header() {
   return (
     <header>
-      <NavBar />
       <div className='hero-content'>
         <div className='hero-wrap'>
           <div className=''>

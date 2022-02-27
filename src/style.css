@@ -25,15 +25,16 @@
 }
 
 .container {
-  background-color: var(--body);
+  position: relative;
   min-height: 100vh;
+  background-color: var(--body);
+  border: 2px solid crimson;
 }
 
 .app-wrap {
-  position: relative;
+  /* position: relative; */
   max-width: 1000px;
   margin: 0 auto;
-  /* outline: auto; */
 }
 
 nav {
@@ -42,9 +43,16 @@ nav {
   width: 100%;
   justify-content: space-between;
   padding: 10px 3%;
+  z-index: 20;
   border-bottom: 1px solid var(--outline);
   color: var(--text-color);
 }
+
+header {
+  position: relative;
+  /* border: 2px solid white; */
+}
+
 nav h2 {
   font-weight: 500;
 }
@@ -52,6 +60,8 @@ nav h2 {
 .ham-menu {
   cursor: pointer;
 }
+
+/* Hero Section */
 
 .hero-content {
   display: flex;
@@ -77,7 +87,6 @@ nav h2 {
   flex-flow: column;
   justify-content: space-around;
   height: 200px;
-  /* outline: auto; */
 }
 
 .hero-content span {
@@ -185,7 +194,7 @@ button {
 /* Porfolio */
 .portfolio {
   padding: 10px 3%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .portfolio h2 {
@@ -245,6 +254,11 @@ button {
   z-index: 3;
 }
 
+.portfolio > div {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--outline);
+}
+
 .repo-btn {
   position: relative;
   border: none;
@@ -258,11 +272,6 @@ button {
 .repo-btn a {
   position: absolute;
   inset: 0;
-}
-
-.portfolio > div {
-  padding: 40px 0;
-  border-bottom: 1px solid var(--outline);
 }
 
 /* Footer */
@@ -367,7 +376,7 @@ ul:not(.socials-wrap) {
 
   /* Footer */
   .repo-btn {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
   }
 }
@@ -396,8 +405,6 @@ ul:not(.socials-wrap) {
   .about-me > div {
     display: flex;
     gap: 20px;
-    outline: auto;
-    height: ;
   }
 
   .avatar {
@@ -412,6 +419,32 @@ ul:not(.socials-wrap) {
 
   .project {
     height: 400px;
+  }
+
+  /* footer */
+
+  footer {
+    max-height: 400px;
+  }
+
+  .footer-wrap {
+    margin: 0;
+  }
+  .quick-links {
+    text-align: left;
+    flex-flow: row;
+    outline: auto;
+    height: 200px;
+  }
+
+  .quick-links > h2 {
+    margin: auto 0;
+    margin-top: 0;
+  }
+
+  .quick-link {
     /* outline: auto; */
+    margin: auto;
+    height: 200px;
   }
 }
