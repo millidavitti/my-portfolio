@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar";
+
 // Assets
 import download from "../../assets/icons/download.png";
 
