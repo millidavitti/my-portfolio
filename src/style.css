@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap");
 
 /* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by IconsBox - Flaticon</a>
+
 #A62626
 
 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
@@ -13,6 +14,8 @@
   list-style: none;
   text-decoration: none;
   font-family: "Barlow", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--text-color);
 }
 
 :root {
@@ -36,6 +39,8 @@
   margin: 0 auto;
 }
 
+/* Navigation */
+
 nav {
   display: flex;
   position: absolute;
@@ -47,9 +52,44 @@ nav {
   color: var(--text-color);
 }
 
-header {
+.mobile-items {
+  position: absolute;
+  background-color: var(--body);
+  inset: 0;
+  top: 50px;
+  margin: 0 auto;
+  margin-right: 0;
+  width: 50%;
+  max-width: 400px;
+  height: fit-content;
+  padding-left: 20px;
+  border: 1px solid white;
+  border-radius: 5px 0 0 5px;
+  transform: translate(0, -450px);
+  transition: all 300ms ease-in;
+}
+
+.mobile-item {
+  /* outline: auto; */
   position: relative;
-  /* border: 2px solid white; */
+  margin: 30px 0;
+  padding: 20px 3%;
+  cursor: pointer;
+}
+
+.mobile-item:hover {
+  outline: 1px solid white;
+}
+
+.mobile-item a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: var(--text-color);
+  z-index: 2;
+  margin: 20px 3%;
 }
 
 nav h2 {
@@ -58,6 +98,7 @@ nav h2 {
 
 .ham-menu {
   cursor: pointer;
+  transition: all 300ms ease-in;
 }
 
 /* Hero Section */
@@ -132,14 +173,25 @@ button {
   cursor: pointer;
 }
 
-.hero-content button {
+.buttons button {
   height: 60px;
 }
 
-.hero-content button:nth-of-type(1) {
+.buttons a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  color: var(--text-color);
+  z-index: 2;
+}
+
+.buttons button:nth-of-type(1) {
+  position: relative;
   background-color: var(--btn-bg);
 }
-.hero-content button:nth-of-type(2) {
+.buttons button:nth-of-type(2) {
   border: 2px solid var(--outline);
   background: none;
 }
@@ -225,7 +277,17 @@ button {
   font-weight: 500;
   padding: 3%;
   position: absolute;
+  transform: translate(0, -35px);
   z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project:hover > h3 {
+  transform: translate(0);
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .overlay {
@@ -324,7 +386,7 @@ footer h2 {
 }
 
 .quick-link:last-child > div,
-ul:not(.socials-wrap) {
+ul:not(.socials-wrap, .mobile-items) {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -400,6 +462,9 @@ ul:not(.socials-wrap) {
   }
 
   /* About me */
+  /* .about-me {
+    margin: 0 auto;
+  } */
 
   .about-me > div {
     display: flex;
@@ -432,7 +497,7 @@ ul:not(.socials-wrap) {
   .quick-links {
     text-align: left;
     flex-flow: row;
-    outline: auto;
+    /* outline: auto; */
     height: 200px;
   }
 

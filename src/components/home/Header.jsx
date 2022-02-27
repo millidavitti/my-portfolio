@@ -17,7 +17,9 @@ export default function Header() {
           </div>
 
           <div className='buttons'>
-            <button>View Portfolio</button>
+            <button>
+              <a href='#port'>View Portfolio</a>
+            </button>
             <button>
               <span>
                 <img src={download} alt='download-icon'></img>

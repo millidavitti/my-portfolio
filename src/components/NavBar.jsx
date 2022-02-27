@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-// Asset Imports
-import menu from "../assets/icons/ham-icon.png";
+import Mobile from "./home/Mobile";
+import Desk from "./home/Desk";
 
 export default function NavBar() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    ///
+    window.addEventListener("resize", (e) => {
+      const { width } = e.target.screen;
+      setWidth(width);
+    });
+    ///
+    console.log("Width Changed");
+  }, [width]);
+
+  //   console.log(window.getBoundingClientRect());
   return (
-    <nav>
-      <h2>Rockstar Dev</h2>
-      <img src={menu} alt='ham-menu' className='ham-menu' />
-    </nav>
+    <>
+      <Mobile />
+      {/* <Desk /> */}
+    </>
   );
 }

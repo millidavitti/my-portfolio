@@ -6,8 +6,8 @@ import arrowRight from "../../assets/icons/arrow-right.png";
 
 export default function Portfolio() {
   return (
-    <section className='portfolio '>
-      <h2>Portfolio</h2>
+    <section className='portfolio'>
+      <h2 id='port'>Portfolio</h2>
       <div>
         <div className='projects grid'>
           <Project />

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 // Components
 import NavBar from "./components/NavBar";
@@ -8,18 +8,6 @@ import Error from "./routes/Error";
 import Footer from "./components/Footer";
 
 export default function App() {
-  const [width, setWidth] = useState(0);
-  useEffect(() => {
-    ///
-    window.addEventListener("resize", (e) => {
-      const { width } = e.target.screen;
-      setWidth(width);
-    });
-    ///
-    console.log("Width Changed");
-  }, [width]);
-
-  //   console.log(window.getBoundingClientRect());
   return (
     <main className='container'>
       <NavBar />
