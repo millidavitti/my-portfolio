@@ -6,8 +6,9 @@ import close from "../../assets/icons/close.png";
 export default function Mobile() {
   const [toggle, setToggle] = useState(false);
 
-  function toggleMenu() {
-    console.log(toggle);
+  function toggleMenu(e) {
+    if (!e.target) return;
+    console.log(e.target);
     setToggle((pre) => !pre);
   }
 

@@ -12,14 +12,9 @@ export default function NavBar() {
       setWidth(width);
     });
     ///
-    console.log("Width Changed");
   }, [width]);
+  console.log(width);
 
   //   console.log(window.getBoundingClientRect());
-  return (
-    <>
-      <Mobile />
-      {/* <Desk /> */}
-    </>
-  );
+  return <>{width < 796 ? <Mobile /> : <Desk />}</>;
 }
