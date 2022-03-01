@@ -11,21 +11,25 @@ export default function Portfolio() {
     {
       title: "Space Tourism",
       img: imgg,
+      alt: "space tourism",
       link: "https://space-vegan.netlify.app",
     },
     {
       title: "To-Do",
       img: imgg,
+      alt: "to do",
       link: "hhttps://todo-vegan.netlify.app",
     },
     {
       title: "Fund",
       img: imgg,
+      alt: "funds",
       link: "https://funds-vegan.netlify.app",
     },
     {
       title: "Lets Roll",
       img: imgg,
+      alt: "space tourism",
       link: "https://lets-roll-vegan.netlify.app",
     },
   ];
