@@ -75,8 +75,9 @@ nav {
   /* outline: auto; */
   position: relative;
   margin: 30px 0;
-  padding: 20px 3%;
-  cursor: pointer;
+  padding: 0px 3%;
+  height: 40px;
+  /* cursor: pointer; */
 }
 
 .mobile-item:hover {
@@ -91,7 +92,7 @@ nav {
   justify-content: center;
   color: var(--text-color);
   z-index: 2;
-  margin: 20px 3%;
+  margin-left: 5px;
 }
 
 nav h2 {

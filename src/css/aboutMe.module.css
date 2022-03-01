@@ -1,0 +1,60 @@
+:root {
+  --btn-bg: #5c62ec;
+  --paragraghs: #1c1e22;
+  --outline: rgba(255, 255, 255, 0.315);
+  --footer-head: #658f9c;
+  --text-color: white;
+}
+.avatar {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aboutMe {
+  margin-top: 100px;
+  padding: 0 3%;
+}
+
+.aboutMe h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+.aboutMe span {
+  color: #658f9c;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.abilities {
+  /* outline: auto; */
+  margin: 50px 0;
+  padding: 0 3%;
+}
+
+.abilities h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.abilities h3 {
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.ability {
+  margin: 20px 0;
+  padding: 4%;
+  border-radius: 5px;
+  background-color: var(--paragraghs);
+  cursor: pointer;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  border-bottom: 2px solid var(--outline);
+  padding-bottom: 50px;
+}

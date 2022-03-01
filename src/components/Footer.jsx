@@ -1,5 +1,7 @@
 import React from "react";
 import Socials from "./home/Socials";
+import { Link } from "react-router-dom";
+
 // Assets
 import linkedIn from "../assets/icons/linkedin-2.png";
 import twitter from "../assets/icons/twitter.png";
@@ -16,10 +18,10 @@ export default function Footer() {
             <h3>Home</h3>
             <ul>
               <li>
-                <a href='https://google.com'>About</a>
+                <Link to='about-me'>About me</Link>
               </li>
               <li>
-                <a href='https://google.com'>Portfolio</a>
+                <Link to='portfolio'>Portfolio</Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 // Asset Imports
 import menu from "../../assets/icons/ham-icon.png";
 import close from "../../assets/icons/close.png";
@@ -6,9 +7,11 @@ import close from "../../assets/icons/close.png";
 export default function Mobile() {
   const [toggle, setToggle] = useState(false);
 
-  function toggleMenu(e) {
-    if (!e.target) return;
-    console.log(e.target);
+  function toggleMenu() {
+    setToggle((pre) => !pre);
+  }
+
+  function hide() {
     setToggle((pre) => !pre);
   }
 
@@ -26,18 +29,18 @@ export default function Mobile() {
         className='ham-menu'
         onClick={toggleMenu}
       />
-      <ul className='mobile-items' style={mobMenu}>
+      <ul className='mobile-items' style={mobMenu} onClick={hide}>
         <li className='mobile-item'>
-          <a href='https://google.com'>Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li className='mobile-item'>
-          <a href='https://google.com'>About me</a>
+          <Link to='about-me'>About me</Link>
         </li>
         <li className='mobile-item'>
-          <a href='https://google.com'>Portfolio</a>
+          <Link to='portfolio'>Portfolio</Link>
         </li>
         <li className='mobile-item'>
-          <a href='https://google.com'>Contact</a>
+          <Link to='contact'>Contact</Link>
         </li>
       </ul>
     </nav>
