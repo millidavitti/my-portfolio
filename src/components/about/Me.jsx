@@ -2,11 +2,11 @@ import React from "react";
 import avatar from "../../assets/images/avatar.jpg";
 
 export default function Me(props) {
-  const { css: ME } = props;
+  const { css } = props;
   return (
-    <section className={ME.aboutMe}>
+    <section className={css.aboutMe}>
       <div>
-        <img className={ME.avatar} src={avatar} alt='Donald Abua' />
+        <img className={css.avatar} src={avatar} alt='Donald Abua' />
         <article>
           <h2>Donald Abua</h2>
           <p>

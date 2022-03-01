@@ -46,9 +46,36 @@
 .ability {
   margin: 20px 0;
   padding: 4%;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: var(--paragraghs);
   cursor: pointer;
+  min-height: 200px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.front {
+  transition: all 1s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.ability:hover .front {
+  transform: rotateY(180deg);
+}
+
+.ability:hover .back {
+  transform: rotateY(0deg);
 }
 
 .wrap {
@@ -57,4 +84,15 @@
   gap: 20px;
   border-bottom: 2px solid var(--outline);
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 796px) {
+  .aboutMe div {
+    display: flex;
+    gap: 40px;
+  }
+
+  .aboutMe img {
+    width: 400px;
+  }
 }

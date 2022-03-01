@@ -22,7 +22,9 @@ export default function Mobile() {
   };
   return (
     <nav>
-      <h2>Rockstar Dev</h2>
+      <h2>
+        <Link to='/'>Rockstar Dev</Link>
+      </h2>
       <img
         src={toggle ? close : menu}
         alt='ham-menu'
