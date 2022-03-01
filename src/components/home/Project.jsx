@@ -1,6 +1,5 @@
 import React from "react";
 // Assets
-import imgg from "../../assets/images/avatar.jpg";
 
 export default function Project(props) {
   const { title, img, link } = props;

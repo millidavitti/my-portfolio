@@ -1,34 +1,38 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Project from "./Project";
 
 // Assets
 import arrowRight from "../../assets/icons/arrow-right.png";
-import imgg from "../../assets/images/avatar.jpg";
+
+import funds from "../../assets/images/funds.png";
+import roll from "../../assets/images/roll.png";
+import space from "../../assets/images/space.png";
+import todo from "../../assets/images/todo.png";
 
 export default function Portfolio() {
   const projects = [
     {
       title: "Space Tourism",
-      img: imgg,
+      img: space,
       alt: "space tourism",
       link: "https://space-vegan.netlify.app",
     },
     {
       title: "To-Do",
-      img: imgg,
+      img: todo,
       alt: "to do",
-      link: "hhttps://todo-vegan.netlify.app",
+      link: "https://todo-vegan.netlify.app",
     },
     {
       title: "Fund",
-      img: imgg,
+      img: funds,
       alt: "funds",
       link: "https://funds-vegan.netlify.app",
     },
     {
       title: "Lets Roll",
-      img: imgg,
+      img: roll,
       alt: "space tourism",
       link: "https://lets-roll-vegan.netlify.app",
     },

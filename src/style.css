@@ -278,6 +278,7 @@ button {
 
 .project h3 {
   font-weight: 500;
+  font-size: 1.7rem;
   padding: 3%;
   position: absolute;
   z-index: 2;
