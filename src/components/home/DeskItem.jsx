@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DeskItem(props) {
   const { activeMenu, id, text, isActive, link } = props;
@@ -9,9 +10,9 @@ function DeskItem(props) {
 
   return (
     <li className='desk-item' onClick={activeMenu.bind(null, id)}>
-      <a href={link} style={underline}>
+      <Link to={link} style={underline}>
         {text}
-      </a>
+      </Link>
     </li>
   );
 }

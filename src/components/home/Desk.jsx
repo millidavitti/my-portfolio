@@ -3,10 +3,10 @@ import DeskItem from "./DeskItem";
 
 function Desk() {
   const [active, setActive] = useState([
-    { id: "home", isActive: true, text: "Home", href: "#" },
-    { id: "about", isActive: false, text: "About me", href: "#" },
-    { id: "portfolio", isActive: false, text: "Portfolio", href: "#" },
-    { id: "contact", isActive: false, text: "Contact", href: "#" },
+    { id: "home", isActive: true, text: "Home", href: "/" },
+    { id: "about", isActive: false, text: "About me", href: "about-me" },
+    { id: "portfolio", isActive: false, text: "Portfolio", href: "portfolio" },
+    { id: "contact", isActive: false, text: "Contact", href: "contact" },
   ]);
 
   function activeMenu(id) {
