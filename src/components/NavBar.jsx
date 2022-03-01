@@ -4,7 +4,7 @@ import Mobile from "./home/Mobile";
 import Desk from "./home/Desk";
 
 export default function NavBar() {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.screen.width);
   useEffect(() => {
     ///
     window.addEventListener("resize", (e) => {
