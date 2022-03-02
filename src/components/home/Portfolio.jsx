@@ -13,24 +13,28 @@ import todo from "../../assets/images/todo.png";
 export default function Portfolio() {
   const projects = [
     {
+      id: 1,
       title: "Space Tourism",
       img: space,
       alt: "space tourism",
       link: "https://space-vegan.netlify.app",
     },
     {
+      id: 2,
       title: "To-Do",
       img: todo,
       alt: "to do",
       link: "https://todo-vegan.netlify.app",
     },
     {
+      id: 3,
       title: "Fund",
       img: funds,
       alt: "funds",
       link: "https://funds-vegan.netlify.app",
     },
     {
+      id: 4,
       title: "Lets Roll",
       img: roll,
       alt: "space tourism",
@@ -39,7 +43,7 @@ export default function Portfolio() {
   ];
 
   const renderProjects = projects.map((pro) => (
-    <Project title={pro.title} img={pro.img} link={pro.link} />
+    <Project key={pro.id} title={pro.title} img={pro.img} link={pro.link} />
   ));
 
   return (

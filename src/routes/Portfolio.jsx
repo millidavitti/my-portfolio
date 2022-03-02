@@ -1,7 +1,11 @@
 import React from "react";
+import Projects from "../components/portfolio/Projects";
+import css from "../css/portfolio.module.css";
 
-function Portfolio() {
-  return <div>Portfolio</div>;
+export default function Portfolio() {
+  return (
+    <>
+      <Projects css={css} />
+    </>
+  );
 }
-
-export default Portfolio;
