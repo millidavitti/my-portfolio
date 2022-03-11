@@ -10,24 +10,30 @@ export default function Me(props) {
         <article>
           <h2>Donald Abua</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            tempore sunt, a laborum temporibus amet repellat nobis.
+            I am motivated, task-oriented, efficient, and my knowledge of the
+            front-end web development industry is comprehensive and current. My
+            enthusiasm and commitment to excellence have served me well in
+            learning the fundamentals and advanced concepts in front edn
+            development. I I have extensive experience with vanilla JavaScript,
+            having had the chance to significantly develop my front-end
+            development skills while working on little side projects.
             <br />
             <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            tempore sunt, a laborum temporibus amet repellat nobis. Culpa cum
-            dicta consectetur nesciunt quaerat sed veritatis animi? Eaque
-            molestias aperiam consequatur distinctio, corporis doloribus quos
-            architecto, deserunt animi obcaecati quia maiores fugit ut facere.
+            When I'm not thinking and writing code, I do what I've always loved
+            doing before I decided to start a career in Front-end development
+            i.e make music on my laptop. To be precise I produce instrumentals
+            (Afro-beats). You can say I'm music producer 😎.
             <br />
             <br />
+            Apart from making and grooving to my own instrumentals, I consume
+            any content on human psychology I find interesting. Jordan B.
+            Peterson inspires me in that aspect. I also spending a lot of time
+            on Quora (answered a few simple questions too)
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            tempore sunt, a laborum temporibus amet repellat nobis. Culpa cum
-            dicta consectetur nesciunt quaerat sed veritatis animi? Eaque
-            molestias aperiam consequatur distinctio, corporis doloribus quos
-            architecto, deserunt animi obcaecati quia maiores fugit ut facere.
+            <br />
+            Lastly, I create graphics with Adobe Illustrator. I usually create
+            graffiti and head shot illustrations. Once in a while I attempt
+            replicating logos. That's about it! Adios amigo(s) 😏
             <br />
             <br />
             <span>abuadonald@gmail.com</span>

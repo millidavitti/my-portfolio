@@ -212,7 +212,7 @@ button {
 }
 .avatar {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 350px;
   object-fit: cover;
   object-position: left;
@@ -243,6 +243,13 @@ button {
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
+  position: relative;
+}
+
+.about-me a {
+  /* display: none; */
+  position: absolute;
+  inset: 0;
 }
 
 /* Porfolio */

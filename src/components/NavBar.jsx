@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import Mobile from "./home/Mobile";
-import Desk from "./home/Desk";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { desk } = props;
   const [width, setWidth] = useState(window.screen.width);
   useEffect(() => {
     ///
@@ -14,5 +14,5 @@ export default function NavBar() {
     ///
   }, [width]);
 
-  return <>{width < 796 ? <Mobile /> : <Desk />}</>;
+  return <>{width < 796 ? <Mobile /> : desk}</>;
 }

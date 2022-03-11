@@ -1,27 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import DeskItem from "./DeskItem";
 
-function Desk() {
-  const [active, setActive] = useState([
-    { id: "home", isActive: true, text: "Home", href: "/" },
-    { id: "about", isActive: false, text: "About me", href: "about-me" },
-    { id: "portfolio", isActive: false, text: "Portfolio", href: "portfolio" },
-    { id: "contact", isActive: false, text: "Contact", href: "contact" },
-  ]);
-
-  function activeMenu(id) {
-    setActive((pre) => {
-      return pre.map((obj) => {
-        return obj.id === id
-          ? { ...obj, isActive: true }
-          : {
-              ...obj,
-              isActive: false,
-            };
-      });
-    });
-  }
-
+function Desk(props) {
+  const { active, activeMenu } = props;
   return (
     <nav>
       <div className='desk-wrap'>

@@ -33,7 +33,7 @@ export default function Footer() {
                 <a href='https://google.com'>E-mail</a>
               </li>
               <li>
-                <a href='https://google.com'>Linkedin</a>
+                <a href='https://linkedin.com/in/donaldabua-react/'>Linkedin</a>
               </li>
             </ul>
           </div>
