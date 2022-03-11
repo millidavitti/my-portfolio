@@ -10,11 +10,11 @@ export default function Me(props) {
         <article>
           <h2>Donald Abua</h2>
           <p>
-            I see you're a bit curious. Well, I am motivated, task-oriented,
+            I can see you're a bit curious. Well, I am motivated, task-oriented,
             efficient, and my knowledge of the front-end web development
             industry is comprehensive and current. My enthusiasm and commitment
-            to excellence have served me well in learning the fundamentals and
-            advanced concepts in front edn development. I I have extensive
+            to excellence has served me well in learning the fundamentals and
+            advanced concepts in front edn development. I have extensive
             experience with vanilla JavaScript, having had the chance to
             significantly develop my front-end development skills while working
             on little side projects.
