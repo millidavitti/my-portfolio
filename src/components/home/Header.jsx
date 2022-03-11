@@ -22,7 +22,13 @@ export default function Header() {
               <a href='#port'>View Portfolio</a>
             </button>
             <button>
-              <Link to='https://my.indeed.com/p/donalda-2wf5elc'></Link>
+              <a
+                href='https://my.indeed.com/p/donalda-2wf5elc'
+                target='blank'
+                rel='noopener noreferrer'
+              >
+                {" "}
+              </a>
               <span>
                 <img src={download} alt='download-icon'></img>
               </span>
