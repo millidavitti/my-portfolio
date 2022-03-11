@@ -215,7 +215,7 @@ button {
   width: 80%;
   height: 350px;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   margin: 0 auto;
   border-radius: 10px;
 }
