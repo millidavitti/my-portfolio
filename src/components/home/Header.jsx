@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Assets
 import download from "../../assets/icons/download.png";
@@ -21,6 +22,7 @@ export default function Header() {
               <a href='#port'>View Portfolio</a>
             </button>
             <button>
+              <Link to='https://my.indeed.com/p/donalda-2wf5elc'></Link>
               <span>
                 <img src={download} alt='download-icon'></img>
               </span>
