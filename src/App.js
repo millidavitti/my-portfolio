@@ -47,7 +47,7 @@ export default function App() {
           <Route path='/' element={<Home about={about} />} />
           <Route path='about-me' element={<Aboutme />} />
           <Route path='portfolio' element={<Portfolio />} />
-          <Route path='contact' element={<ContactMe />} />
+       
           <Route path='*' element={<Error />} />
         </Routes>
         <Footer />
