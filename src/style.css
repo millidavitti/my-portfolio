@@ -180,7 +180,7 @@ button {
   height: 60px;
 }
 
-.buttons a {
+button a {
   display: flex;
   flex-flow: column;
   justify-content: center;
