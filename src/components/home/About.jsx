@@ -21,7 +21,7 @@ export default function About(props) {
             to excellence have served me well. I have extensive experience with
             vanilla JavaScript, having had the chance to significantly develop
             my front-end development skills while working on little side
-            projects.
+            projects..
           </p>
           <button>
             More about me
