@@ -15,10 +15,10 @@ export default function About(props) {
         <article>
           <h2>About Me</h2>
           <p>
-            Hi, I am Donald Abua. I am motivated, task-oriented, and efficient,
-            and my knowledge of the front-end web development industry is
-            comprehensive and current. My enthusiasm and commitment to
-            excellence have served me well. I have extensive experience with
+            I see you're a bit curious. Well, I am motivated, task-oriented, and
+            efficient, and my knowledge of the front-end web development
+            industry is comprehensive and current. My enthusiasm and commitment
+            to excellence have served me well. I have extensive experience with
             vanilla JavaScript, having had the chance to significantly develop
             my front-end development skills while working on little side
             projects.
