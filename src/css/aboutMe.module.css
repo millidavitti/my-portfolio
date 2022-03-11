@@ -12,8 +12,6 @@
   max-height: 450px;
   border-radius: 10px;
   margin: 0 auto;
-  /* object-fit: contain; */
-  outline: auto;
 }
 
 .aboutMe {
@@ -65,7 +63,6 @@
   overflow-y: auto;
   perspective: 1000px;
   position: relative;
-  outline: auto;
 }
 
 .front {
