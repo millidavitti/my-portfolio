@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Components
@@ -14,12 +14,18 @@ import About from "./components/home/About";
 import Desk from "./components/home/Desk";
 
 export default function App() {
-  const [active, setActive] = useState([
+  const navStates = [
     { id: "home", isActive: true, text: "Home", href: "/" },
     { id: "about", isActive: false, text: "About me", href: "about-me" },
     { id: "portfolio", isActive: false, text: "Portfolio", href: "portfolio" },
     { id: "contact", isActive: false, text: "Contact", href: "contact" },
-  ]);
+  ];
+  const retrieve = JSON.parse(localStorage?.getItem("navigation"));
+  const [active, setActive] = useState(retrieve || navStates);
+
+  useEffect(() => {
+    localStorage.setItem("navigation", JSON.stringify(active));
+  }, [active]);
 
   function activeMenu(id) {
     setActive((pre) => {
