@@ -9,15 +9,16 @@ import funds from "../../assets/images/funds.png";
 import roll from "../../assets/images/roll.png";
 import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
+import fork from "../../assets/images/fork.png";
 
 export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "Space Tourism",
-      img: space,
-      alt: "space tourism",
-      link: "https://space-vegan.netlify.app",
+      title: "Forkify",
+      img: fork,
+      alt: "forkify",
+      link: "https://forkify-vegan.netlify.app/",
     },
     {
       id: 2,
@@ -39,6 +40,13 @@ export default function Portfolio() {
       img: roll,
       alt: "space tourism",
       link: "https://lets-roll-vegan.netlify.app",
+    },
+    {
+      id: 5,
+      title: "Space Tourism",
+      img: space,
+      alt: "space tourism",
+      link: "https://space-vegan.netlify.app",
     },
   ];
 
