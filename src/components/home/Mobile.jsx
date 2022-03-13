@@ -41,9 +41,9 @@ export default function Mobile() {
         <li className='mobile-item'>
           <Link to='portfolio'>Portfolio</Link>
         </li>
-        <li className='mobile-item'>
+        {/* <li className='mobile-item'>
           <Link to='contact'>Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

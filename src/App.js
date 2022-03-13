@@ -18,7 +18,7 @@ export default function App() {
     { id: "home", isActive: true, text: "Home", href: "/" },
     { id: "about", isActive: false, text: "About me", href: "about-me" },
     { id: "portfolio", isActive: false, text: "Portfolio", href: "portfolio" },
-    { id: "contact", isActive: false, text: "Contact", href: "contact" },
+    // { id: "contact", isActive: false, text: "Contact", href: "contact" },
   ];
   const retrieve = JSON.parse(localStorage?.getItem("navigation"));
   const [active, setActive] = useState(retrieve || navStates);
