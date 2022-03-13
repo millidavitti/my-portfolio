@@ -5,13 +5,14 @@ import funds from "../../assets/images/funds.png";
 import roll from "../../assets/images/roll.png";
 import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
+import fork from "../../assets/images/fork.png";
 
 export default function Projects(props) {
   const { css } = props;
   const projectInfos = [
     {
       id: 1,
-      title: "Space\nTourism",
+      title: "Space Tourism",
       img: space,
       text: (
         <p>
@@ -73,6 +74,32 @@ export default function Projects(props) {
           Vanilla Javascript was used to implement the games functionality.
           <br /> <br /> Made use of Object-oriented programming paradigm to
           build an develop this game.
+        </p>
+      ),
+    },
+    {
+      id: 5,
+      title: "Forkify",
+      img: fork,
+      text: (
+        <p>
+          Vanilla Javascript was used to implement the functionality in this
+          recipe app.
+          <br /> <br /> Made use of Model-view controller architecture to build
+          and develop the application.
+          <br />
+          <br />
+          MVC in my own opinion is similar to the architecture React apps use.
+          Becasue becasue it require spliting the code into moudules to perform
+          a specific task.
+          <br />
+          <br />
+          In other to follow the MVC architecture to the latter, I added using a
+          popular design pattern called the Event Publisher subscriber pattern.
+          <br />
+          <br />
+          Using the Event Publisher subscriber pattern to ensure application
+          logic happens in the controller.
         </p>
       ),
     },
