@@ -98,7 +98,7 @@ export default function Projects(props) {
           popular design pattern called the Event Publisher subscriber pattern.
           <br />
           <br />
-          Using the Event Publisher subscriber pattern to ensure application
+          Used the Event Publisher subscriber pattern to ensure application
           logic happens in the controller.
         </p>
       ),
