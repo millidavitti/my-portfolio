@@ -21,7 +21,7 @@ export default function Mobile() {
 		pointerEvents: toggle ? "initial " : "none",
 	};
 	return (
-		<nav>
+		<nav className='mobb'>
 			<h2>
 				<Link to='/'>Rockstar Dev</Link>
 			</h2>

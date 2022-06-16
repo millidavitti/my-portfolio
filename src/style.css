@@ -101,6 +101,7 @@ nav {
 
 .mob h2 {
 	font-weight: 500;
+	display: none;
 }
 
 .ham-menu {
@@ -239,7 +240,7 @@ button a {
 
 .about-me article p {
 	margin: 20px 0;
-	line-height: 30px;
+	line-height: 40px;
 	font-size: 1.2rem;
 }
 
@@ -445,6 +446,14 @@ ul:not(.socials-wrap, .mobile-items, .desk-items) {
 
 	.ham-menu {
 		display: none;
+	}
+
+	.mobb {
+		display: none;
+	}
+
+	.hero-wrap {
+		min-height: 100px;
 	}
 
 	.desk {
