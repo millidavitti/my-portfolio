@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Components
-import NavBar from "./components/NavBar";
+
 import Home from "./routes/Home";
 import Aboutme from "./routes/AboutMe";
 import ContactMe from "./routes/ContactMe";
