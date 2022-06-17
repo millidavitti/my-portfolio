@@ -404,7 +404,6 @@ ul:not(.socials-wrap, .mobile-items, .desk-items) {
 .socials-wrap {
 	display: flex;
 	gap: 20px;
-	outline: auto;
 }
 
 .socials-wrap li:first-child {
