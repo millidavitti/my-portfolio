@@ -1,116 +1,120 @@
 :root {
-  --btn-bg: #5c62ec;
-  --paragraghs: #1c1e22;
-  --outline: rgba(255, 255, 255, 0.315);
-  --footer-head: #658f9c;
-  --text-color: white;
+	--btn-bg: #5c62ec;
+	--paragraghs: #1c1e22;
+	--outline: rgba(255, 255, 255, 0.315);
+	--footer-head: #658f9c;
+	--text-color: white;
 }
 .avatar {
-  width: 100%;
-  height: 100%;
-  max-width: 450px;
-  max-height: 450px;
-  border-radius: 10px;
-  margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	max-width: 450px;
+	max-height: 450px;
+	border-radius: 10px;
+	margin: 0 auto;
 }
 
 .aboutMe {
-  margin-top: 100px;
-  padding: 0 3%;
+	margin-top: 100px;
+	padding: 0 3%;
 }
 
 .aboutMe div {
-  display: flex;
-  flex-flow: column;
+	display: flex;
+	flex-flow: column;
 }
 
 .aboutMe h2 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  margin: 15px 0;
+	font-weight: 500;
+	font-size: 2.5rem;
+	margin: 15px 0;
 }
 
 .aboutMe span {
-  color: #658f9c;
-  font-weight: 500;
-  font-size: 1.2rem;
+	color: #658f9c;
+	font-weight: 500;
+	font-size: 1.2rem;
 }
 
 .abilities {
-  /* outline: auto; */
-  margin: 50px 0;
-  padding: 0 3%;
+	/* outline: auto; */
+	margin: 50px 0;
+	padding: 0 3%;
 }
 
 .abilities h2 {
-  text-align: center;
-  font-weight: 500;
+	text-align: center;
+	font-weight: 500;
 }
 
 .abilities h3 {
-  font-weight: 500;
-  margin: 15px 0;
+	font-weight: 500;
+	margin: 15px 0;
 }
 
 .ability {
-  margin: 20px 0;
-  padding: 4%;
-  border-radius: 10px;
-  background-color: var(--paragraghs);
-  cursor: pointer;
-  min-height: 300px;
-  overflow: hidden;
-  perspective: 1000px;
-  position: relative;
-  text-align: justify;
-  line-height: 22px;
+	margin: 20px 0;
+	padding: 4%;
+	border-radius: 10px;
+	background-color: var(--paragraghs);
+	cursor: pointer;
+	min-height: 300px;
+	overflow: hidden;
+	perspective: 1000px;
+	position: relative;
+	text-align: justify;
+	line-height: 22px;
 }
 
 .front {
-  transition: all 1s ease-in-out;
-  backface-visibility: hidden;
+	transition: all 1s ease-in-out;
+	backface-visibility: hidden;
 }
 
 .back {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  inset: 0;
-  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform: rotateY(-180deg);
-  backface-visibility: hidden;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	inset: 0;
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
 }
 .back p {
-  padding: 4%;
+	padding: 4%;
 }
 
 .ability:hover:nth-of-type(1) .front {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .ability:hover .back {
-  transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 .wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  border-bottom: 2px solid var(--outline);
-  padding-bottom: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	border-bottom: 2px solid var(--outline);
+	padding-bottom: 50px;
 }
 
 @media screen and (min-width: 796px) {
-  .aboutMe div {
-    display: flex;
-    flex-flow: row;
-    gap: 40px;
-  }
+	.aboutMe div {
+		display: flex;
+		flex-flow: row;
+		gap: 40px;
+	}
 
-  .aboutMe h2 {
-    margin-top: 0;
-  }
+	.aboutMe h2 {
+		margin-top: 0;
+	}
 
-  .aboutMe img {
-    width: 400px;
-  }
+	.aboutMe p {
+		line-height: 25px;
+	}
+
+	.aboutMe img {
+		width: 400px;
+	}
 }

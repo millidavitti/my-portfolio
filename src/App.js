@@ -51,7 +51,6 @@ export default function App() {
 
 	return (
 		<main className='container'>
-			{/* <NavBar desk={desk} /> */}
 			<Mobile />
 			<Desk active={active} activeMenu={activeMenu} />
 			<div className='app-wrap'>
@@ -63,7 +62,7 @@ export default function App() {
 
 					<Route path='*' element={<Error />} />
 				</Routes>
-				<Footer />
+				<Footer active={activeMenu} />
 			</div>
 		</main>
 	);
