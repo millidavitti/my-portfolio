@@ -3,6 +3,7 @@ import avatar from "../../assets/images/avatar.jpg";
 
 export default function Me(props) {
 	const { css } = props;
+
 	return (
 		<section className={css.aboutMe}>
 			<div>

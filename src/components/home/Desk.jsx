@@ -1,7 +1,7 @@
 import React from "react";
 import DeskItem from "./DeskItem";
 
-function Desk(props) {
+export default function Desk(props) {
 	const { active, activeMenu } = props;
 	return (
 		<nav className='desk'>
@@ -23,5 +23,3 @@ function Desk(props) {
 		</nav>
 	);
 }
-
-export default Desk;
