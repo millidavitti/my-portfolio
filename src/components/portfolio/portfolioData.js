@@ -3,7 +3,7 @@ import roll from "../../assets/images/roll.png";
 import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
 import fork from "../../assets/images/fork.png";
-export const portfolioData = [
+const portfolioData = [
 	{
 		id: 1,
 		title: "Space Tourism",
@@ -113,3 +113,4 @@ export const portfolioData = [
 		),
 	},
 ];
+export default portfolioData;
