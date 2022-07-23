@@ -3,6 +3,7 @@ import roll from "../../assets/images/roll.png";
 import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
 import fork from "../../assets/images/fork.png";
+import torch from "../../assets/images/torch.png";
 const portfolioData = [
 	{
 		id: 1,
@@ -100,7 +101,7 @@ const portfolioData = [
 	{
 		id: 6,
 		title: "Torch Blog",
-		img: fork,
+		img: torch,
 		alt: "torch-blog-screenshot",
 		text: (
 			<p>
