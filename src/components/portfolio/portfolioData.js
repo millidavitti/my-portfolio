@@ -30,6 +30,7 @@ const portfolioData = [
 				</p>
 			</p>
 		),
+		link: "https://nulo-hotels.vercel.app",
 	},
 	{
 		id: 6,
@@ -50,6 +51,7 @@ const portfolioData = [
 				</p>
 			</p>
 		),
+		link: "https://torch-mordern-blog.vercel.app",
 	},
 	{
 		id: 5,
@@ -76,6 +78,7 @@ const portfolioData = [
 				happens in the controller.
 			</p>
 		),
+		link: "https://forkify-vegan.netlify.app/",
 	},
 	{
 		id: 4,
@@ -88,12 +91,14 @@ const portfolioData = [
 				an develop this game.
 			</p>
 		),
+		link: "https://todo-vegan.netlify.app",
 	},
 	{
 		id: 3,
 		title: "To-do",
 		img: todo,
 		text: <p>This simple but useful project was implemented using React.</p>,
+		link: "https://funds-vegan.netlify.app",
 	},
 	{
 		id: 2,
@@ -115,6 +120,7 @@ const portfolioData = [
 				the setTimeout function (pun intended)
 			</p>
 		),
+		link: "https://lets-roll-vegan.netlify.app",
 	},
 	{
 		id: 1,
@@ -143,6 +149,7 @@ const portfolioData = [
 				navigation was implemented using ES6 classes and private fields
 			</p>
 		),
+		link: "https://space-vegan.netlify.app",
 	},
 ];
 export default portfolioData;

@@ -17,7 +17,7 @@ export default function Portfolio() {
 	const projects = [
 		{
 			id: 7,
-			title: "Nulo Hotels",
+			title: "Nulo Hotels [PROTOTYPE]",
 			img: nulo,
 			alt: "nulo-hotels-screenshot",
 
