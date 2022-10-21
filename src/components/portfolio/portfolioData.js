@@ -4,6 +4,7 @@ import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
 import fork from "../../assets/images/fork.png";
 import torch from "../../assets/images/torch.png";
+import nulo from "../../assets/images/nulo.png";
 const portfolioData = [
 	{
 		id: 7,
