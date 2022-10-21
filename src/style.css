@@ -14,7 +14,6 @@
 	list-style: none;
 	text-decoration: none;
 	font-family: "Barlow", sans-serif;
-	scroll-behavior: smooth;
 	color: var(--text-color);
 }
 
@@ -27,6 +26,9 @@
 	--text-color: white;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 .container {
 	position: relative;
 	min-height: 100vh;
