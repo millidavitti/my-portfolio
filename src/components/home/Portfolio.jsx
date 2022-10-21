@@ -20,6 +20,7 @@ export default function Portfolio() {
 			title: "Nulo Hotels",
 			img: nulo,
 			alt: "nulo-hotels-screenshot",
+
 			link: "https://nulo-hotels.vercel.app",
 		},
 		{

@@ -25,7 +25,7 @@ const portfolioData = [
 				being made.
 				<p>
 					<strong> Tool Chain :</strong> ReactJS, NextJS, Express JS Mongodb,
-					SWR,Github
+					SWR,Github.
 				</p>
 			</p>
 		),
