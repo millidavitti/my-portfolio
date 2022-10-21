@@ -20,7 +20,7 @@ const portfolioData = [
 				application. It also supports two themes; light mode and dark mode.
 				<br></br>
 				<br></br>
-				<strong> NOTE</strong>
+				<strong> NOTE: </strong>
 				The application is still in development at the moment. The backend/api
 				is being developed and the slight improvements to the frontend are still
 				being made.
