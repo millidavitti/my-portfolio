@@ -6,6 +6,31 @@ import fork from "../../assets/images/fork.png";
 import torch from "../../assets/images/torch.png";
 const portfolioData = [
 	{
+		id: 7,
+		title: "Nulo Hotels [PROTOTYPE]",
+		img: nulo,
+		alt: "nulo-hotels-screenshot",
+		text: (
+			<p>
+				Nulo hotel booking web application built for users to make reservations
+				and bookmarks of multiple hotels worldwide. It comes with an efficient
+				built in reservation calendar with visual cues for the overall
+				improvement of the users experience while making reservation on the
+				application. It also supports two themes; light mode and dark mode.
+				<br></br>
+				<br></br>
+				<strong> NOTE</strong>
+				The application is still in development at the moment. The backend/api
+				is being developed and the slight improvements to the frontend are still
+				being made.
+				<p>
+					<strong> Tool Chain :</strong> ReactJS, NextJS, Express JS Mongodb,
+					SWR,Github.
+				</p>
+			</p>
+		),
+	},
+	{
 		id: 6,
 		title: "Torch Blog",
 		img: torch,

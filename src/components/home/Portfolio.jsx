@@ -11,9 +11,18 @@ import space from "../../assets/images/space.png";
 import todo from "../../assets/images/todo.png";
 import fork from "../../assets/images/fork.png";
 import torch from "../../assets/images/torch.png";
+import nulo from "../../assets/images/nulo.png";
 
 export default function Portfolio() {
 	const projects = [
+		{
+			id: 7,
+			title: "Nulo Hotels",
+			img: nulo,
+			alt: "nulo-hotels-screenshot",
+
+			link: "https://nulo-hotels.vercel.app",
+		},
 		{
 			id: 6,
 			title: "Torch Blog",
